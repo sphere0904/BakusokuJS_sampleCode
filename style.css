@@ -1,0 +1,81 @@
+/* 全体のスタイル */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f7f7;
+    color: #3f72af;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 見出し */
+h1 {
+    font-size: 2.5em;
+    color: #112d4e;
+    margin-bottom: 20px;
+}
+
+/* 日付選択ラベル */
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #112d4e;
+}
+
+/* 日付選択フィールド */
+input[type="date"] {
+    padding: 8px;
+    border-radius: 12px;
+    border: 2px solid #3f72af;
+    background-color: #dbe2ef;
+    color: #112d4e;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: #112d4e;
+}
+
+/* チケット一覧のスタイル */
+#ticketList {
+    margin-top: 20px;
+}
+
+/* チケットアイテムのスタイル */
+.ticket-item {
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* お気に入りボタンのスタイル */
+.fav-button {
+    margin-right: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.fav-button:hover {
+    transform: scale(1.05);
+}
+
+/* チケット情報のスタイル */
+.ticket-item span {
+    font-size: 1.2em;
+    color: #112d4e;
+}
